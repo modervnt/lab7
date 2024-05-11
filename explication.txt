@@ -1,0 +1,12 @@
+This C program manages a list of combinations (agricultural machines) in memory, allowing users to read data from a file, add new combinations via the console, sort the list by speed, and search for combinations by producer or model. Here is a detailed explanation of its main features :
+
+Combine Structure: Defines the structure to store the information about each combine, including the producer, the model, the tank capacity, the weight, the loading speed, the speed, and the price in dollars and in rubles.
+Compare function: Compares two character strings to see if they are identical. It is used to search for combinations by producer or model.
+free_memory function: Frees the memory allocated for the array of combinations and their associated character strings (producer and model). It takes care of freeing the memory for each element of the array as well as for the array itself.
+Function add_new_position: Adds a new position to the array, allocating memory for the producer and model character strings, and copying the information provided.
+input_from_file function: Reads the data of the combinations from a file specified by the user. It counts the number of lines in the file, allocates memory for the array of combinations, then reads each line from the file and adds the data to the list.
+input_from_consol function: Allows the user to add new combinations directly from the console. It resizes the combinations table to accommodate the new entries, then asks the user to enter the information for each new combination.
+Sort_last function: Sorts the array of combinations by speed, in descending order.
+Function output_console: Displays the information of the combinations in the console, allowing the user to choose a search field (producer or model) and to find corresponding combinations.
+Main Function: The main function of the program. It asks the user if he wants to read the data from a file or not, then, if necessary, asks how many new combinations he wants to add. After adding the combinations, the program sorts the list by speed and displays the information of the combinations. Finally, it frees the memory allocated for the array of combinations.
+In summary, this program offers a user interface to manage a list of combinations, allowing users to read data from a file, add new combinations, sort the list by speed, and search for combinations by producer or model
